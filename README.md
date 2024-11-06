@@ -1,40 +1,53 @@
-# Welcome to Remix!
+# Remix JS + shadcn/ui Starter
 
-- 📖 [Remix docs](https://remix.run/docs)
+A minimal Remix starter template using JavaScript (no TypeScript) with shadcn/ui components and Tailwind CSS.
 
-## Development
+## What's included
 
-Run the dev server:
+- ✅ Remix (with Vite)
+- ✅ JavaScript (no TypeScript)
+- ✅ Tailwind CSS
+- ✅ shadcn/ui components
+- ✅ Pre-configured import aliases (~/)
 
-```shellscript
+## Getting Started
+
+```bash
+# Clone the repository
+gh repo clone YOUR-USERNAME/remix-js-shadcn-base my-project-name
+cd my-project-name
+
+# Remove the old git history and start fresh
+rm -rf .git
+git init
+
+# Install dependencies
+npm install
+
+# Start development server
 npm run dev
-```
-
-## Deployment
-
-First, build your app for production:
-
-```sh
+Adding shadcn Components
+bashCopy# Add any shadcn component you need
+npx shadcn@latest add button
+npx shadcn@latest add card
+npx shadcn@latest add dialog
+# etc...
+Building for Production
+bashCopy# Build the app
 npm run build
-```
 
-Then run the app in production mode:
-
-```sh
+# Start in production mode
 npm start
-```
+Deployment
+Built-in Remix app server is production-ready.
+Deploy the output of npm run build:
 
-Now you'll need to pick a host to deploy it to.
+build/server
+build/client
 
-### DIY
+Styling
 
-If you're familiar with deploying Node applications, the built-in Remix app server is production-ready.
-
-Make sure to deploy the output of `npm run build`
-
-- `build/server`
-- `build/client`
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever css framework you prefer. See the [Vite docs on css](https://vitejs.dev/guide/features.html#css) for more information.
+Uses Tailwind CSS for styling
+shadcn/ui components are pre-configured with CSS variables
+Edit app/tailwind.css for global styles
+Customize tailwind.config.js for theme settings
