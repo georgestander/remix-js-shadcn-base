@@ -67,3 +67,14 @@ Deploy the output of `npm run build`:
 For more information, refer to the official documentation:
 - [Remix Quickstart](https://remix.run/docs/en/main/start/quickstart)
 - [shadcn UI Documentation](https://ui.shadcn.com/docs)
+
+## Warning
+This project includes a temporary fix for a known vulnerability. The `@remix-run/server-runtime` package has been overridden to use `cookie` version `^0.7.2`. Please monitor the official repository for a permanent fix and update accordingly.
+
+```json
+"overrides": {
+    "@remix-run/server-runtime": {
+        "cookie": "^0.7.2"
+    }
+}
+```
